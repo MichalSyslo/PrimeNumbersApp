@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="box">
+        <h1>Prime Numbers Calculator</h1>
+    </header>
+    <section class="box">
+        <form th:method="post">
+                <h2>Provide number</h2>
+                <input type="number"  th:field="*{targetNumber.targetNumber}">
+                <button>Calculate</button>
+            </form>
+            <section class="box list">
+                <ul>
+                    <th:block th:each="number : ${primeNumbers}">
+                        <p th:text="${number}+ ' '"></p>
+                    </th:block>
+                </ul>
+
+            </section>
+    </section>
+</body>
+</html>

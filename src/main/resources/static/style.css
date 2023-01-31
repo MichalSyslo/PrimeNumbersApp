@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
+    Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    max-width: 35rem;
+    text-transform: uppercase;
+}
+
+.box {
+    text-align: center;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+}
+
+.boxPost {
+    width: 95%;
+}
+
+h2 {
+    margin: 1rem;
+}
+
+input {
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+form button {
+    font: inherit;
+    height: 2.5rem;
+    padding: 0 1rem;
+    color: black;
+    border: 2px solid green;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+button:hover {
+    background-color: rgba(212, 252, 153, 0.401);
+}
+
+.list ul {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+}
+
+.list p {
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .list ul {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .list ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .list ul {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .box {
+        width: 99%;
+        padding: 0.5rem;
+    }
+}
