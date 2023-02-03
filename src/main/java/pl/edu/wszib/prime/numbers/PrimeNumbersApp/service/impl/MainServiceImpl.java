@@ -11,10 +11,10 @@ import static java.lang.Math.sqrt;
 @Service
 public class MainServiceImpl implements IMainService {
 
-    public List<Integer> calculatePrimeNumbers(int targetNumber) {
+    public List<Integer> calculatePrimeNumbers(int userNumber) {
         List<Integer> primeNumbers = new ArrayList<>();
 
-        for(int i = 1; i<=targetNumber; i++) {
+        for(int i = 1; i<=userNumber; i++) {
             if(isPrime(i)) {
                 primeNumbers.add(i);
             }
