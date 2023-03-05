@@ -1,13 +1,13 @@
 package pl.edu.wszib.prime.numbers.PrimeNumbersApp.model;
 
 public class UserNumber {
-    private Integer userNumber;
+    private Long userNumber;
 
-    public Integer getUserNumber() {
+    public Long getUserNumber() {
         return userNumber;
     }
 
-    public void setUserNumber(Integer userNumber) {
+    public void setUserNumber(Long userNumber) {
         this.userNumber = userNumber;
     }
 }

@@ -40,6 +40,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>primeNumbersApp</finalName>
 	</build>
-
 </project>

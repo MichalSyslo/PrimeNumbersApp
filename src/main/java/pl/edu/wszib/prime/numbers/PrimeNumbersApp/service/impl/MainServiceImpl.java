@@ -11,7 +11,7 @@ import static java.lang.Math.sqrt;
 @Service
 public class MainServiceImpl implements IMainService {
 
-    public List<Integer> calculatePrimeNumbers(int userNumber) {
+    public List<Integer> calculatePrimeNumbers(long userNumber) {
         List<Integer> primeNumbers = new ArrayList<>();
 
         for(int i = 1; i<=userNumber; i++) {
@@ -22,7 +22,7 @@ public class MainServiceImpl implements IMainService {
         return primeNumbers;
     }
 
-    private boolean isPrime(int num) {
+    private boolean isPrime(long num) {
         if (num <= 1) {
             return false;
         } else if (num <= 3) {
